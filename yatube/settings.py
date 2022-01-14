@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'posts',
+    'core',
     'debug_toolbar',
 ]
 
@@ -121,3 +122,6 @@ INTERNAL_IPS = [
     "127.0.0.1",
 
 ]
+
+LOGIN_URL = 'users:login'
+LOGIN_REDIRECT_URL = 'posts:index'
